@@ -11,7 +11,7 @@ import {
   Modal,
 } from "antd";
 import { SearchOutlined, PlusOutlined } from "@ant-design/icons";
-import logo from "../assets/logo.png";
+import logo from "../assets/14.sze_1501989521.jpg";
 import music from "../assets/music.mp3";
 import "./Home.css";
 
@@ -34,7 +34,7 @@ export default class Home extends PureComponent {
     this.audioValue.play();
   }
 
-  // research
+  // Research
   onSearch = (values) => {
     this.setState({ word: values.word }, () => {
       this.getTableList();
@@ -71,7 +71,7 @@ export default class Home extends PureComponent {
       existingWord && ((data && data.id !== existingWord.id) || !data);
     const newList = [];
     if (isHaveWord) {
-      message.error("Word已存在");
+      message.error("Word is existed");
     } else {
       if (data) {
         list.forEach((item) => {
@@ -124,7 +124,7 @@ export default class Home extends PureComponent {
 
   // Logout
   handleLogout = () => {
-    window.location.href = "/login";
+    window.location.href = "/Login";
   };
 
   render() {
@@ -200,7 +200,7 @@ export default class Home extends PureComponent {
                 onFinish={this.onSearch}
               >
                 <FormItem name="word">
-                  <Input placeholder="word" />
+                  <Input placeholder="Word" />
                 </FormItem>
                 <FormItem>
                   <Button
@@ -253,7 +253,7 @@ export default class Home extends PureComponent {
                     },
                   ]}
                 >
-                  <Input placeholder="please input" />
+                  <Input placeholder="Please input" />
                 </Form.Item>
                 <Form.Item
                   name="description"
@@ -271,9 +271,6 @@ export default class Home extends PureComponent {
             </Modal>
           </Card>
         </Content>
-        <Footer style={{ textAlign: "center" }}>
-          copyright ©2020 Created by me
-        </Footer>
       </Layout>
     );
   }

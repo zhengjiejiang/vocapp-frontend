@@ -16,7 +16,7 @@ export default class Login extends PureComponent {
     if (isHaveAccount) {
       if (isHaveAccount.password === values.password) {
         message.success("Login successfully~");
-        window.location.href = "/home";
+        window.location.href = "/Home";
       } else {
         message.error("Password error , please try again");
       }
@@ -73,7 +73,7 @@ export default class Login extends PureComponent {
             >
               Log in
             </Button>
-            New user ? <Link to="/reg">Register now!</Link>
+            New user ? <Link to="/Register">Register now!</Link>
           </Form.Item>
         </Form>
       </div>

@@ -16,7 +16,7 @@ export default class Register extends PureComponent {
       message.success("Register successfully ~");
       account.push(values);
       localStorage.setItem("word-account", JSON.stringify(account));
-      window.location.href = "/login";
+      window.location.href = "/Login";
     }
   };
 
@@ -83,7 +83,7 @@ export default class Register extends PureComponent {
             >
               Register
             </Button>
-            Already have an account ? <Link to="/login">Go login!</Link>
+            Already have an account ? <Link to="/Login">Go login!</Link>
           </Form.Item>
         </Form>
       </div>
