@@ -149,7 +149,7 @@ export default class Home extends PureComponent {
         dataIndex: "description",
       },
       {
-        title: "Operat",
+        title: "Operation",
         render: (text, item) => (
           <>
             <Button
